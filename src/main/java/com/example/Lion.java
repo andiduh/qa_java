@@ -12,6 +12,7 @@ public class Lion {
     }
 
     public Lion(String sex) throws Exception {
+        this(new Feline());
         if ("Самец".equals(sex)) {
             hasMane = true;
         } else if ("Самка".equals(sex)) {

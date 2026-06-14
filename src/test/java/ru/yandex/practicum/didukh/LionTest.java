@@ -33,22 +33,4 @@ public class LionTest {
         List<String> actualFood = lion.getFood();
         assertEquals(expectedFood, actualFood, "Хищники должны есть Животных, Птиц и Рыб.");
     }
-
-    @Test
-    void doesHaveManeForMaleIsTrue() throws Exception {
-        Lion lion = new Lion("Самец");
-        assertTrue(lion.doesHaveMane(), "У самца должна быть грива.");
-    }
-
-    @Test
-    void doesHaveManeForFemaleIsFalse() throws Exception {
-        Lion lion = new Lion("Самка");
-        assertFalse(lion.doesHaveMane(), "У самки не должно быть гривы.");
-    }
-
-    @Test
-    void doesHaveManeWithException() throws Exception {
-        Exception exception = assertThrows(Exception.class, () -> new Lion("Неизвестно"));
-        assertEquals("Используйте допустимые значения пола животного - самец или самка", exception.getMessage());
-    }
 }

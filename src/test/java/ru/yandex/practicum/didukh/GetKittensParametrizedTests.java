@@ -5,7 +5,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ParametrizedTests {
+public class GetKittensParametrizedTests {
 
     @ParameterizedTest
     @ValueSource(ints = {2, 5, 12})
